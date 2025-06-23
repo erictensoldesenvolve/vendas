@@ -39,6 +39,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding: 20px;
+    padding-top: 200px;
   }
   .direita { 
     width: 50%;
@@ -111,4 +112,49 @@ body {
   }
   .absolute {
     background-color: #062A40;
+  }
+  .cta-bg {
+    background-image: url('../img/fundo2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  footer {
+    background-color: #062A40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .portifolio {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .portifolio img{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+  }
+  .portifolio .card {
+    width: 30%;
+    height: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 50px;
+  }
+  .portifolio h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .portifolio p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+  }
+  footer p {
+    color: #fff;
   }
