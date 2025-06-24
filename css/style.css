@@ -13,12 +13,26 @@ body {
     left: 0;
     right: 0;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topo img {
+    max-width: 300px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
   }
 
   .hero-bg {
     background-image: #062A40;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .section-bg {
@@ -40,10 +54,11 @@ body {
     justify-content: center;
     padding: 20px;
     padding-top: 200px;
+    float: left;
   }
   .direita { 
-    width: 50%;
-    height: 100vh;
+    width: 40%;
+    height: 300px;
     background-image: url('../img/programacao.jpg');
     background-size: cover;
     background-position: center;
@@ -52,6 +67,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 101px;
+    border-radius: 10px;
   }
   .inset-0 {
     background-image: url('../img/computador.jpg');
@@ -62,6 +78,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 101px;
+    border-radius: 10px;
   }
   
   .inset-0::before {
@@ -99,16 +116,12 @@ body {
     text-align: center;
     max-width: 80%;
   }
-  .topo img {
-    width: 300px;
-    height: 80px;
-  }
+  
   .esquerda h1 {
     font-size: 2rem;
     font-weight: 600;
     color: #000;
-    width: 100%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
   }
   .esquerda a {
@@ -150,4 +163,424 @@ body {
   }
   footer p {
     color: #fff;
+  }
+
+  /* ===== RESPONSIVIDADE ===== */
+
+  /* Tablets (768px e abaixo) */
+  @media (max-width: 768px) {
+    .esquerda {
+      width: 100%;
+      padding: 15px;
+      padding-top: 120px;
+      text-align: center;
+      align-items: center;
+    }
+    
+    .direita {
+      width: 100%;
+      height: 50vh;
+      margin-top: 0;
+    }
+    
+    .esquerda h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .topo img {
+      max-width: 200px;
+      max-height: 60px;
+    }
+    
+    .texto-explicativo {
+      padding: 40px 0;
+      min-height: auto;
+    }
+    
+    .texto-explicativo h2 {
+      font-size: 1.8rem !important;
+      margin-bottom: 8px !important;
+    }
+    
+    .texto-explicativo .grid {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+    
+    .texto-explicativo .bg-white {
+      padding: 20px !important;
+    }
+    
+    .texto-explicativo .text-4xl {
+      font-size: 1.5rem !important;
+    }
+    
+    .texto-explicativo .text-2xl {
+      font-size: 1.25rem !important;
+    }
+    
+    .func-bg {
+      background-attachment: scroll;
+    }
+    
+    .func-bg .bg-black {
+      padding: 20px !important;
+    }
+    
+    .func-bg .grid {
+      grid-template-columns: 1fr !important;
+      gap: 15px !important;
+    }
+    
+    .func-bg h2 {
+      font-size: 1.8rem !important;
+    }
+    
+    .func-bg .text-lg {
+      font-size: 1rem !important;
+    }
+    
+    .cta-bg h2 {
+      font-size: 1.8rem !important;
+    }
+    
+    .cta-bg .text-lg {
+      font-size: 1rem !important;
+    }
+    
+    .cta-bg .bg-green-500 {
+      padding: 12px 24px !important;
+      font-size: 0.9rem !important;
+    }
+    
+    /* Seção com formulário */
+    .bg-white .grid {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+    }
+    
+    .bg-white h2 {
+      font-size: 1.8rem !important;
+      margin-bottom: 6px !important;
+    }
+    
+    .bg-white .bg-gray-50 {
+      padding: 15px !important;
+    }
+    
+    .bg-white .text-xl {
+      font-size: 1.1rem !important;
+    }
+    
+    .bg-gradient-to-br {
+      padding: 20px !important;
+    }
+    
+    .bg-gradient-to-br h2 {
+      font-size: 1.5rem !important;
+    }
+    
+    .bg-gradient-to-br input,
+    .bg-gradient-to-br select,
+    .bg-gradient-to-br textarea {
+      padding: 10px !important;
+      font-size: 0.9rem !important;
+    }
+    
+    .bg-gradient-to-br button {
+      padding: 12px !important;
+      font-size: 0.9rem !important;
+    }
+  }
+
+  /* Celulares (480px e abaixo) */
+  @media (max-width: 480px) {
+    .esquerda {
+      width: 100%;
+      padding: 10px;
+      padding-top: 100px;
+    }
+    
+    .direita {
+      width: 100%;
+      height: 40vh;
+    }
+    
+    .relative {
+      display: block;
+    }
+    .titulo-mobile {
+      padding: 15px;
+      padding-top: 100px;
+    }
+    .titulo-mobile h1 {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+    }
+    .descricao-mobile {
+      padding: 15px;
+    }
+    .descricao-mobile p {
+      font-size: 0.85rem;
+      max-width: 95%;
+    }
+    .esquerda h1 {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+    }
+    
+    .topo img {
+      max-width: 150px;
+      max-height: 45px;
+    }
+    
+    .direita p {
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+    
+    .texto-explicativo {
+      padding: 30px 0;
+      font-size: 16px;
+    }
+    
+    .texto-explicativo h2 {
+      font-size: 1.5rem !important;
+      margin-bottom: 6px !important;
+    }
+    
+    .texto-explicativo .bg-white {
+      padding: 15px !important;
+    }
+    
+    .texto-explicativo .text-4xl {
+      font-size: 1.25rem !important;
+    }
+    
+    .texto-explicativo .text-2xl {
+      font-size: 1.1rem !important;
+    }
+    
+    .texto-explicativo .space-y-3 li {
+      font-size: 0.9rem !important;
+    }
+    
+    .func-bg {
+      padding: 15px !important;
+    }
+    
+    .func-bg .bg-black {
+      padding: 15px !important;
+    }
+    
+    .func-bg h2 {
+      font-size: 1.5rem !important;
+      margin-bottom: 8px !important;
+    }
+    
+    .func-bg .space-y-3 li {
+      font-size: 0.9rem !important;
+    }
+    
+    .cta-bg {
+      padding: 15px !important;
+    }
+    
+    .cta-bg h2 {
+      font-size: 1.5rem !important;
+      margin-bottom: 4px !important;
+    }
+    
+    .cta-bg .text-lg {
+      font-size: 0.9rem !important;
+      margin-bottom: 4px !important;
+    }
+    
+    .cta-bg .bg-green-500 {
+      padding: 10px 20px !important;
+      font-size: 0.85rem !important;
+    }
+    
+    /* Seção com formulário */
+    .bg-white {
+      padding: 15px !important;
+    }
+    
+    .bg-white h2 {
+      font-size: 1.5rem !important;
+      margin-bottom: 4px !important;
+    }
+    
+    .bg-white .bg-gray-50 {
+      padding: 12px !important;
+    }
+    
+    .bg-white .text-xl {
+      font-size: 1rem !important;
+    }
+    
+    .bg-white .text-gray-700 {
+      font-size: 0.85rem !important;
+    }
+    
+    .bg-gradient-to-br {
+      padding: 15px !important;
+    }
+    
+    .bg-gradient-to-br h2 {
+      font-size: 1.25rem !important;
+      margin-bottom: 4px !important;
+    }
+    
+    .bg-gradient-to-br label {
+      font-size: 0.8rem !important;
+    }
+    
+    .bg-gradient-to-br input,
+    .bg-gradient-to-br select,
+    .bg-gradient-to-br textarea {
+      padding: 8px !important;
+      font-size: 0.85rem !important;
+    }
+    
+    .bg-gradient-to-br button {
+      padding: 10px !important;
+      font-size: 0.85rem !important;
+    }
+    
+    .bg-gradient-to-br .text-sm {
+      font-size: 0.75rem !important;
+    }
+    
+    footer {
+      padding: 15px !important;
+    }
+    
+    footer p {
+      font-size: 0.85rem !important;
+    }
+  }
+
+  /* Telas muito pequenas (320px e abaixo) */
+  @media (max-width: 320px) {
+    .esquerda h1 {
+      font-size: 1.1rem;
+    }
+    
+    .topo img {
+      max-width: 120px;
+      max-height: 35px;
+    }
+    
+    .texto-explicativo h2 {
+      font-size: 1.25rem !important;
+    }
+    
+    .func-bg h2 {
+      font-size: 1.25rem !important;
+    }
+    
+    .cta-bg h2 {
+      font-size: 1.25rem !important;
+    }
+    
+    .bg-white h2 {
+      font-size: 1.25rem !important;
+    }
+    
+    .bg-gradient-to-br h2 {
+      font-size: 1.1rem !important;
+    }
+  }
+
+  /* Orientação paisagem em celulares */
+  @media (max-width: 768px) and (orientation: landscape) {
+    .esquerda {
+      width: 100%;
+      padding-top: 80px;
+    }
+    
+    .direita {
+      width: 100%;
+      height: 60vh;
+    }
+  }
+
+  /* Ajustes para telas grandes */
+  @media (min-width: 1200px) {
+    .esquerda h1 {
+      font-size: 2.5rem;
+    }
+    
+    .texto-explicativo h2 {
+      font-size: 2.5rem !important;
+    }
+    
+    .func-bg h2 {
+      font-size: 2.5rem !important;
+    }
+    
+    .cta-bg h2 {
+      font-size: 2.5rem !important;
+    }
+    
+    .bg-white h2 {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  /* Layout lado a lado apenas em desktop (1024px+) */
+  @media (min-width: 1024px) {
+    .esquerda {
+      width: 50%;
+      text-align: left;
+      align-items: flex-start;
+    }
+    
+    .direita {
+      width: 50%;
+      height: 100vh;
+    }
+  }
+
+  .titulo-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+    padding-top: 120px;
+    min-height: auto;
+  }
+  
+  .titulo-mobile h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .descricao-mobile {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: block;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+  }
+  
+  .descricao-mobile p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 90%;
+    margin: 0 auto;
   }
