@@ -71,7 +71,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
   }
   
@@ -107,8 +107,12 @@ body {
     font-size: 2rem;
     font-weight: 600;
     color: #000;
-    text-align: left;
+    width: 100%;
+    text-align: center;
     margin-bottom: 30px;
+  }
+  .esquerda a {
+    margin-left: 150px;
   }
   .absolute {
     background-color: #062A40;
@@ -124,36 +128,25 @@ body {
     padding: 20px;
     text-align: center;
   }
-  .portifolio {
+  .texto-explicativo {
+    width: 100%;
+    min-height: 600px;
+    font-size: 20px;
     text-align: center;
-    padding: 50px 0;
+    padding: 80px 0;
+    font-weight: bold;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   }
-  .portifolio img{
-    width: 50%;
-    height: 50%;
+  a.bg-green-500 {
+    background-color: #008000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 300px;
+    border-radius: 20px;
     text-align: center;
-  }
-  .portifolio .card {
-    width: 30%;
-    height: 30%;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-left: 50px;
-  }
-  .portifolio h3{
-    font-size: 18px;
-    font-weight: 600;
-    color: #000;
-    text-align: center;
-    margin-top: 10px;
-  }
-  .portifolio p{
-    font-size: 12px;
-    font-weight: 400;
-    color: #000;
-    text-align: center;
+   
   }
   footer p {
     color: #fff;
