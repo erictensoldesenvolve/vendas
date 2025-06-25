@@ -17,14 +17,26 @@ body {
     align-items: center;
     justify-content: center;
   }
-
-  .topo img {
+  .topo .logo {
     max-width: 300px;
     max-height: 80px;
-    width: auto;
+    width: 40%;
     height: auto;
+    float: left;
   }
-
+.topo ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+  width: 60%;
+}
+.topo ul li {
+  margin-right: 20px;
+  width: 200px;
+  text-align: center;
+}
   .hero-bg {
     background-image: #062A40;
     background-size: cover;
@@ -163,6 +175,30 @@ body {
   }
   footer p {
     color: #fff;
+  }
+
+  .conteudo {
+    width: 80%;
+    height: 100%;
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .conteudo p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 2.5;
+  }
+  .texto-sobre-nos {
+    color: #000;
+    font-size: 50px;
+    text-align: center; 
+    margin-top: 180px;
+    font-weight: bold;
   }
 
   /* ===== RESPONSIVIDADE ===== */
@@ -583,4 +619,43 @@ body {
     margin: 0;
     max-width: 90%;
     margin: 0 auto;
+  }
+
+  /* Estilo para o botão do WhatsApp */
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+  }
+
+  .whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  }
+
+  .whatsapp-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Responsividade para o botão do WhatsApp */
+  @media (max-width: 768px) {
+    .whatsapp-btn {
+      width: 35px;
+      height: 35px;
+    }
+    
+    .whatsapp-btn svg {
+      width: 18px;
+      height: 18px;
+    }
   }
